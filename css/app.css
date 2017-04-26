@@ -1,0 +1,365 @@
+html,
+body {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ color: #fff ;
+ background: url(../img/arcade-5.jpg) no-repeat center center fixed; 
+ background-size: cover;
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+
+.navbar {
+  margin-top: 20px;
+  background-color: transparent;
+}
+
+
+.navbar-brand {
+	padding: 0px;
+}
+
+.navbar-default {
+	border-color: transparent;
+}
+
+
+.row div h2 {
+	text-decoration: underline;
+	-moz-text-decoration-color: red; /* Code for Firefox */
+    text-decoration-color: red;
+    text-shadow: 2px 2px #ff0000;
+}
+
+.mainp {
+	text-shadow: 2px 2px black;
+	font-weight: bold;
+}
+
+.row div span {
+	text-shadow: 2px 2px black;
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+}
+
+/* Social Media Icons by Awesome Fonts */
+.fa-facebook-official {
+	color: #3A5795;
+	
+}
+
+.fa-twitch{
+	color: #3B2362;
+}
+
+.fa-twitter-square {
+	color: #57AFE6;
+}
+
+
+/*.container {
+ position: relative;
+ top: 100px;
+}
+
+h1 {
+ font-family: "HelveticaNeue-UltraLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-size: 80px;
+ font-weight: normal;
+ margin: 0;
+ text-align: right;
+ color: #fff;
+}
+
+h2 {
+ border-top: 1px solid #211f1e ;
+ font-size: 24px;
+ font-weight: bold;
+ margin: 10px 0 40px 0;
+ padding: 30px 0 0 0;
+ text-align: right;
+}
+
+.day > div {
+    font-weight: bold;
+ line-height: 48px;
+}
+
+.weekday span {
+ font-size: 18px;
+ font-weight: bold;
+}
+
+.weekday p {
+ display: inline-block;
+ font-size: 18px;
+ font-weight: bold;
+}
+
+.weather img {
+ width: 48px;
+}
+
+.high p,
+.low p,
+.hourly .temp {
+ font-size: 16px;
+}
+
+.hourly {
+ text-align: center;
+ display: none;
+}
+
+.hourly .hour {
+ font-weight: bold;
+ font-size: 16px;
+}
+
+.hourly img {
+ width: 24px;
+}
+
+.hourly p {
+ margin: 16px 0;
+}
+
+.last {
+ margin-bottom: 100px;
+}
+*/
+
+.row div p {
+    text-indent: 50px;
+    font-size: 15px;
+}
+
+
+#bg, #box-bg {
+  background-position: center top;
+  background-size: 100% auto;
+  padding: 70px 90px 120px 90px;
+  background-repeat: no-repeat;
+}
+
+#bg {
+  background-position: center top;
+  padding: 70px 90px 120px 90px;
+}
+
+#container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  margin-top: 25px;
+  border: 2px solid #fff;
+}
+
+#box-bg {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99;
+  width: 90%;
+  background-size: 111.11%;
+  background-position: -90px -70px;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+}
+
+#box {
+  position: relative;
+  z-index: 100;
+  padding: 20px 20px;
+  height: 600px;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.7);
+}
+
+@media (max-width: 600px ) {
+  #bg { padding: 10px; }
+  #box-bg { background-position: center -10px; }
+}
+
+#box h2, #box h5, #box h5 a { text-align: center; color: #fefefe; font-weight: normal; }
+#box h2 { margin-bottom: 30px; font-size: 2em; }
+#box h5 { margin-top: 20px }
+
+
+
+
+
+
+
+
+/* Carousel */
+
+.carousel {
+	margin-top: 75px;
+}
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+    /* Control buttons  */
+    /* Previous button  */
+    /* Next button  */
+    /* Changes the position of the indicators */
+    /* Changes the color of the indicators */
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-control.left {
+    left: -60px;
+}
+#quote-carousel .carousel-control.right {
+    right: -60px;
+}
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 4px solid #CCC;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    border-color: #f33;
+    opacity: 1;
+    overflow: hidden;
+}
+.carousel-inner {
+    min-height: 300px;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .3;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 50vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(http://www.gallopingghostarcade.com/images/genericbanner.jpg); 
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url(http://kimberlybradfordevents.com/wp-content/uploads/2014/08/SLIDE-SHOW-3.jpg);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
